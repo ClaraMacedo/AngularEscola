@@ -14,6 +14,10 @@ import { TurmaComponent } from './turma/turma.component';
 import { ListaDeDisciplinasComponent } from './lista-de-disciplinas/lista-de-disciplinas.component';
 import { DisciplinaComponent } from './disciplina/disciplina.component';
 import { CadastroDeDisciplinaComponent } from './cadastro-de-disciplina/cadastro-de-disciplina.component';
+import { ListaDePessoasComponent } from './lista-de-pessoas/lista-de-pessoas.component';
+import { CadastrarPessoaComponent } from './cadastrar-pessoa/cadastrar-pessoa.component';
+import { PessoasService} from './pessoas.service';
+import { PessoaComponent } from './pessoa/pessoa.component';
 
 @NgModule({
     imports: [
@@ -32,10 +36,14 @@ import { CadastroDeDisciplinaComponent } from './cadastro-de-disciplina/cadastro
         ListaDeDisciplinasComponent,
         DisciplinaComponent,
         CadastroDeDisciplinaComponent,
+        ListaDePessoasComponent,
+        CadastrarPessoaComponent,
+        PessoaComponent,
     ],
     providers: [
         TurmasService,
-        DisciplinasService
+        DisciplinasService,
+        PessoasService,
     ],
     bootstrap: [AppComponent]
 })

@@ -8,6 +8,9 @@ import { TurmaComponent } from './turma/turma.component';
 import {ListaDeDisciplinasComponent} from "./lista-de-disciplinas/lista-de-disciplinas.component";
 import {DisciplinaComponent} from "./disciplina/disciplina.component";
 import {CadastroDeDisciplinaComponent} from "./cadastro-de-disciplina/cadastro-de-disciplina.component";
+import {ListaDePessoasComponent} from "./lista-de-pessoas/lista-de-pessoas.component";
+import {PessoaComponent} from "./pessoa/pessoa.component";
+import {CadastrarPessoaComponent} from "./cadastrar-pessoa/cadastrar-pessoa.component";
 
 const appRoutes: Routes = [
     { path: 'cadastrar-disciplina', component: CadastroDeDisciplinaComponent },
@@ -15,6 +18,9 @@ const appRoutes: Routes = [
     { path: 'disciplinas/:id', component: DisciplinaComponent },
     { path: 'turmas', component: ListaDeTurmasComponent },
     { path: 'turmas/:codigo', component: TurmaComponent },
+    { path: 'pessoas', component: ListaDePessoasComponent},
+    { path: 'pessoas/:id', component: PessoaComponent },
+    { path: 'cadastrar-pessoa', component: CadastrarPessoaComponent },
     { path: '', component: HomeComponent },
     { path: '**', component: PaginaNaoEncontradaComponent }
 ];

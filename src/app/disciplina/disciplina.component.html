@@ -1,6 +1,10 @@
 <h1>{{disciplina.nome}}</h1>
 <hr>
-<h2>Turmas</h2>
+<h2>Turma</h2>
 <ul>
-  <li *ngFor="let turma of disciplina.turmas">{{turma|json}}</li>
+  <li *ngFor="let pessoa of pessoas">
+    <a [routerLink]="['/pessoas', pessoa.id]">
+      {{pessoa.nome}}
+    </a>
+  </li>
 </ul>
